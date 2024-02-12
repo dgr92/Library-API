@@ -1,12 +1,15 @@
 const express = require('express');
 const server = express();
 const morgan = require('morgan');
+const cors = require('cors');
 
 const bookRouter = require('./router/router');
 
 server.use(morgan('dev'));
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
+
+server.use(cors());
 
 server.get('/', (_req, res) => {
   res.status(200).send({

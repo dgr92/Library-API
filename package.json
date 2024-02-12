@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon index.js",
-    "format": "npx prettier --write"
+    "format": "npx prettier --write",
+    "start": "node index.js"
   },
   "author": "dgr92",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "firebase-admin": "^12.0.0",

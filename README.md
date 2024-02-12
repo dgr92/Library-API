@@ -1,6 +1,6 @@
 # Library-api
 
-Este proyecto es la api para una biblioteca que permite tener control sobre los libros almacenados en una base de datos.
+Este proyecto es la API para una biblioteca que permite tener control sobre los libros almacenados en una base de datos.
 
 ## Características
 

@@ -16,7 +16,7 @@ const searchBook = async (req, res) => {
   res.status(200).send({
     status: 'OK',
     message: 'Book found',
-    data: book,
+    data: { id: id, ...book },
   });
 };
 

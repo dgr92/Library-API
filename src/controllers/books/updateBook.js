@@ -20,7 +20,7 @@ const updateBook = async (req, res) => {
     editorial: editorial || book.editorial,
     pages: pages || book.pages,
     isbn13: isbn13 || book.isbn13,
-    avaiable: avaiable || book.avaiable,
+    avaiable: avaiable,
   };
 
   await db.collection('libros').doc(id).update(updatedBook);
